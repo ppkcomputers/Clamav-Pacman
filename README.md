@@ -26,6 +26,11 @@ Before running the OSD interface shell configuration, ensure you have the follow
 
 ## Installation & Structure
 
+# Hyprland lua keybind
+## Custom Pacman Antivirus OSD Scanner Toggle
+## Uses Super + Alt + C to gracefully launch or terminate the overlay window layer
+bind("SUPER ALT", "C", "exec", "~/.config/Quickshell/ClamAV-VirusTotal/toggle.sh")
+
 Clone the repository inside your local configuration space:
 
 ```bash
@@ -34,7 +39,3 @@ cd ~/.config/Quickshell/
 git clone [https://github.com/yourusername/ClamAV-VirusTotal.git](https://github.com/yourusername/ClamAV-VirusTotal.git)
 cd ClamAV-VirusTotal
 
-# Hyprland lua keybind
-## Custom Pacman Antivirus OSD Scanner Toggle
-## Uses Super + Alt + C to gracefully launch or terminate the overlay window layer
-bind("SUPER ALT", "C", "exec", "~/.config/Quickshell/ClamAV-VirusTotal/toggle.sh")
