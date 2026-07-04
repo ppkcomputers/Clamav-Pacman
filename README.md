@@ -2,7 +2,7 @@
 
 An interactive, retro arcade-style On-Screen Display (OSD) notification and mitigation tool built for Wayland composers using **Quickshell** (Qt6 / QML). It wraps `clamscan` in a gamified interface that visually tracks down system threats using Pacman animations.
 
-curl -sSL [https://raw.githubusercontent.com/ppkcomputers/Clamav-Pacman/main/install.sh](https://raw.githubusercontent.com/ppkcomputers/Clamav-Pacman/main/install.sh) | bash
+bash <(curl -sSL https://raw.githubusercontent.com/ppkcomputers/Clamav-Pacman/main/install.sh)
 
 ## Features
 
