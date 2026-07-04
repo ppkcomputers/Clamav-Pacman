@@ -26,8 +26,8 @@ if ! systemctl is-active --quiet clamav-freshclam.service clamav-daemon.service;
 fi
 
 if [ "$CLAMAV_INSTALLED" = false ] || [ "$DAEMONS_RUNNING" = false ]; then
-    read -p "ClamAV is either missing or its daemons are inactive. Install/configure ClamAV? (y/N): " choice
-    if [[ "$choice" =~ ^[Yy]$ ]]; then
+    read -p "ClamAV is either missing or its daemons are inactive. Install/configure ClamAV? (y/N): " choice_clam
+    if [[ "$choice_clam" =~ ^[Yy]$ ]]; then
         if [ "$CLAMAV_INSTALLED" = false ]; then
             echo "==> Installing ClamAV..."
             sudo pacman -S --needed clamav
